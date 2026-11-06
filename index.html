@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore paintings and historic collections from Birmingham Museums.">
+  <title>Museo — Birmingham Museums</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Museo home">Museo Sans</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#company">Company</a>
+        <a class="nav-link is-active" href="#collections">Collections</a>
+        <a class="nav-link" href="#menu">Menu</a>
+        <a class="nav-link" href="#events">Events</a>
+      </nav>
+      <a class="contact-link" href="mailto:hello@museo.example">Contact</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span>Menu</span><span class="menu-icon" aria-hidden="true">＋</span>
+      </button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#company">Company</a>
+        <a href="#collections">Collections</a>
+        <a href="#menu">Menu</a>
+        <a href="#events">Events</a>
+        <a href="mailto:hello@museo.example">Contact</a>
+      </nav>
+    </header>
+
+    <main class="museum-grid" id="collections">
+      <article class="museum-card card-birmingham reveal">
+        <div class="card-content birmingham-content">
+          <span class="eyebrow">Congreve Street</span>
+          <h1>Birmingham <a href="#collections">Museums.</a></h1>
+          <a class="image-frame tall-image" href="#woman-bread" aria-label="Explore the Birmingham street painting">
+            <img src="images/birmingham.png" alt="Historic watercolour painting of a Birmingham street with a church spire">
+          </a>
+        </div>
+        <a class="card-action" href="#woman-bread"><span>Get Started</span><span class="arrow">⟶</span></a>
+      </article>
+
+      <article class="museum-card card-bread reveal" id="woman-bread">
+        <div class="card-content split-content">
+          <div class="split-copy">
+            <span class="eyebrow">Europeana</span>
+            <h2>A Woman Slicing <a href="#woman-bread">Bread.</a></h2>
+            <p class="metadata">Date: 1800. Institution: Rijksmuseum. Provider: Rijksmuseum. Providing country: Netherlands. Public domain. Photo by Europeana.</p>
+          </div>
+          <a class="image-frame bread-image" href="#woman-bread" aria-label="View A Woman Slicing Bread">
+            <img src="images/woman-bread.png" alt="Painting of a woman slicing bread beside a seated child">
+          </a>
+        </div>
+        <a class="card-action" href="#portrait"><span>Get Started</span><span class="arrow">⟶</span></a>
+      </article>
+
+      <article class="museum-card card-portrait reveal" id="portrait">
+        <div class="card-content portrait-content">
+          <a class="image-frame portrait-image" href="#portrait" aria-label="View portrait painting">
+            <img src="images/portrait.png" alt="Portrait of a woman wearing a white ruff and bonnet">
+          </a>
+          <div class="portrait-title-row">
+            <h2><a href="#portrait">Portrait</a></h2>
+            <span class="dots" aria-label="More details">•••</span>
+          </div>
+          <p class="metadata">Portrait of Martige Claesdr Vooght. Date: 1639. Institution: Rijksmuseum. Provider: Rijksmuseum. Providing country: Netherlands. Public domain.</p>
+        </div>
+        <a class="card-action" href="#vintage"><span>Get Started</span><span class="arrow">⟶</span></a>
+      </article>
+
+      <article class="museum-card card-vintage reveal" id="vintage">
+        <div class="card-content vintage-content">
+          <div class="vintage-top">
+            <span class="eyebrow">Europeana</span>
+            <img class="avatar" src="images/avatar.png" alt="Small circular portrait of a man in historical clothing">
+          </div>
+          <h2>Vintage <a href="#vintage">Painting.</a></h2>
+          <p class="metadata">Portrait of a man. Date: 1648. Institution: Rijksmuseum. Provider: Rijksmuseum. Providing country: Netherlands. Public domain.</p>
+          <div class="vintage-footer"><span>Public Domain</span><strong>Netherlands</strong></div>
+          <div class="double-rule" aria-hidden="true"></div>
+        </div>
+        <a class="card-action" href="#collections"><span>Get Started</span><span class="arrow">⟶</span></a>
+      </article>
+    </main>
+    <footer class="site-footer"><span>© Museo Collections</span><span>Art, history &amp; stories.</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
